@@ -10,3 +10,6 @@
 * `std::cin >> foo` stores input from `std::cin` into variable `foo`
 * interestingly, `std::cin` will cause the output buffer to flush
 * `std::endl` also causes the output buffer to flush
+* `+` operator (ofc) doesnt work on string-literals, only std::strings.
+* `type name;`: *declaration*
+* `type name = value;`: *definitions*
