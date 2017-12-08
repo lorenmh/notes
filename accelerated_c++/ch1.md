@@ -11,5 +11,6 @@
 * interestingly, `std::cin` will cause the output buffer to flush
 * `std::endl` also causes the output buffer to flush
 * `+` operator (ofc) doesnt work on string-literals, only std::strings.
-* `type name;`: *declaration*
-* `type name = value;`: *definitions*
+* `type name;`: *declaration* (in JS, declaration, in C++ this is a definition as well)
+* `type name = value;`: *definition*
+
