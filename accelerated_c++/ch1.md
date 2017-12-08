@@ -1,21 +1,12 @@
-* `#include <XXXX>` XXXX is a *standard header*
-* `<<` is the *output operator*
-* `std::cout` has type `std::ostream`
-* `xxx::yyy`, xxx is a *namespace*
+* "A variable is an object that has a name" (note "object")
+* "An object ... is a part of the computer's memory that has a type"
+* Objects can be unnamed (all variables are objects, not all objects are variables)
+* `some_type foo`: *definition*
+* local variable (ofc) only exists in the block it was defined, but, apparently it is "*destroyed*" once the closing brace is encountered
+* the object has an interface (the set of operations possible to an object of a certain type)
 
-`<<` is *left associative*, meaning:
+    some_type foo; // implicit initilization
 
-    std::cout << "foo" << std::endl;
-    // is equiv to
-    (std::cout << "foo") << std::endl;
-    // which yields
-    std::cout << std::endl;
-    // which yields
-    std::cout;
-
-* `std::endl` is a *manipulator*, which means when the `<<` operator sees it, it 'manipulates' the stream by writing a newline to the stream and yielding `cout`
-* `xxx::yyy` is a *qualified name* (because it uses `::`)
-* `::` is the *scope operator*
-* `a+2`: *expression*
-* `a+2;`: *statement*
-* a *block* is a sequence of statements enclosed in curly braces.
+* `std::cin >> foo` stores input from `std::cin` into variable `foo`
+* interestingly, `std::cin` will cause the output buffer to flush
+* `std::endl` also causes the output buffer to flush
