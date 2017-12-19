@@ -1,3 +1,5 @@
+# CH1
+
 * "A variable is an object that has a name" (note "object")
 * "An object ... is a part of the computer's memory that has a type"
 * Objects can be unnamed (all variables are objects, not all objects are variables)
